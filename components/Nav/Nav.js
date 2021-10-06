@@ -21,13 +21,11 @@ export default function Nav() {
       <nav className=" bg-gray-100  items-center  lg:h-26 ">
         <div className="lg:flex py-4 h-26 items-center">
           <div className="flex items-center lg:w-7/12 ">
-            <div className=" h-10 w-16 md:h-auto md:w-auto ml-6 ">
-              <Image
-                src="/../public/vector/default-monochrome.svg"
-                alt="logo"
-                width={120}
-                height={60}
-              />
+            <div className="flex h-10  items-center ml-6 cursor-move">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+</svg>
+<h2 className="md:text-xl sm:text-lg text-sm">GO-SHOP</h2>
             </div>
             <div className="mx-auto  ">
               <Cart />

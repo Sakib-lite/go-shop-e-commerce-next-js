@@ -44,15 +44,13 @@ export default function CartList() {
           </ul>
         </div>
         {!emptyCart && (
-          <button
-            type="button"
-            className="py-2 px-1  bg-gradient-to-r from-green-400 to-blue-500 text-white  transition ease-in duration-200 text-center text-sm font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 w-24 ml-auto"
-          >
-            <Link href="/orders" passHref>
-              {" "}
-              Place Order
+          <div className="mt-2 w-24">
+            <Link href="/orders">
+              <a className="py-2 px-1  bg-gradient-to-r from-green-400 to-blue-500 text-white  transition ease-in duration-200 text-center text-sm font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 ml-auto rounded-lg">
+                Place Order
+              </a>
             </Link>
-          </button>
+          </div>
         )}
       </div>
     </Fragment>
