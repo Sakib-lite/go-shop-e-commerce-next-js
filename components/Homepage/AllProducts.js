@@ -4,7 +4,7 @@ import Product from "./Product";
 export default function AllProducts(props) {
   return (
     <Fragment>
-      <div className="grid lg:grid-cols-3 space-y-4 grid-cols-2  mx-auto lg:ml-20 ">
+      <div className="grid lg:grid-cols-3 space-y-4 grid-cols-2  lg:ml-20 ">
         {props.products.map((product) => (
           <Product
             key={product.id}

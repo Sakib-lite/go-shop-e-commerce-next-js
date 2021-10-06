@@ -2,17 +2,20 @@ import { Fragment } from "react";
 import { useDispatch } from "react-redux";
 import { cartActions } from "../store/cart-slice";
 
+
 export default function CartItem({ id, totalPrice, title, quantity }) {
   const dispatch = useDispatch();
 
   const removeCartItemHandler = () => {
-    dispatch(cartActions.removeItemfromCart(id));
+    dispatch(cartActions.removeItemfromCart(id))
   };
+
+
 
   return (
     <Fragment>
       <li className="border-gray-400 flex  mb-1 w-52 sm:w-64">
-        <div className="shadow border   bg-white 0 rounded-md  items-center md:p-1  flex p-1">
+        <div className="shadow border   bg-white  rounded-md  items-center md:p-1  flex p-1">
           <div className="">
             <div className="">
               <p className="font-medium text-xs sm:text-sm line-clamp-1 lg:text-lg ">

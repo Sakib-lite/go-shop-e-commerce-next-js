@@ -3,9 +3,9 @@ import { Fragment } from "react";
 export default function Search() {
   return (
     <Fragment>
-      <div className="relative">
+      
         <input
-          className="placeholder-blueGray-300 text-blueGray-600 relative bg-white  rounded text-sm md:text-lg border border-blueGray-300 outline-none focus:outline-none focus:ring  lg:w-72 lg:h-14  w-8/12  h-8 sm:h-16 sm:w-56 md:w-60  "
+          className="placeholder-blueGray-300 text-blueGray-600 relative bg-white  rounded text-sm md:text-lg border border-blueGray-300 outline-none focus:outline-none focus:ring  lg:w-72 lg:h-14  w-full  h-8 sm:h-16 sm:w-56 md:w-60  "
           placeholder="Search Products "
         />
         <button className="absolute right-3 top-5 hidden sm:block md:top-4 ">
@@ -22,7 +22,7 @@ export default function Search() {
             />
           </svg>
         </button>
-      </div>
+     
     </Fragment>
   );
 }

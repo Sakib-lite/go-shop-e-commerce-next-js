@@ -47,7 +47,7 @@ export default function Catagories() {
       </a>
 
       {!ctx.showCatagories && (
-        <div className="lg:h-0 ml-8 lg:ml-0  lg:w-0 h-26 lg:mt-4">
+        <div className="lg:h-0 ml-8 lg:ml-0  lg:w-0 h-26 lg:mt-0">
           <ul className="  space-y-2  lg:bg-gray-100 lg:w-40 lg:py-6 lg:rounded-lg">
             <NestedCatagories />
           </ul>

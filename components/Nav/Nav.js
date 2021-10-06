@@ -21,20 +21,20 @@ export default function Nav() {
       <nav className=" bg-gray-100  items-center  lg:h-26 ">
         <div className="lg:flex py-4 h-26 items-center">
           <div className="flex items-center lg:w-7/12 ">
-            <div className="flex h-10  items-center ml-6 cursor-move">
+            <div className="flex h-10  items-center ml-2 mr-2 cursor-move sm:ml-4">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
 </svg>
-<h2 className="md:text-xl sm:text-lg text-sm">GO-SHOP</h2>
+<h2 className="md:text-xl sm:text-lg text-xs">GO-SHOP</h2>
             </div>
             <div className="mx-auto  ">
               <Cart />
             </div>
-            <div className="mx-auto  ml-4">
+            <div className="w-24 sm:w-auto mr-2 relative sm:mx-auto">
               <Search />
             </div>
 
-            <div className="lg:hidden sm:mr-2 ml-auto mr-4">
+            <div className="lg:hidden sm:mr-2  mr-2">
               <Dropdown />
             </div>
           </div>
@@ -42,16 +42,10 @@ export default function Nav() {
           <div
             className={`${dropdownClass} absolute lg:static inset-y-0 right-0  lg:bg-transparent bg-gray-300  translate-x-0   lg:block  transition-transform duration-700 ease-in-out sm:px-6 md:w-64 md:px-8 lg:px-0 lg:w-auto lg:ml-auto `}
           >
-            <div className="flex mt-2 mr-3 sm:w-56 sm:h-20 lg:hidden">
-              <Image
-                src="/../public/happy-cover.png"
-                alt="logo"
-                width={150}
-                height={55}
-                className="rounded-lg"
-              />
+            <div className="flex  mr-3 sm:w-56 sm:h-20 lg:hidden">
+             
               <button
-                className="ml-auto mr-2"
+                className="ml-auto mr-4 mt-4"
                 type="button"
                 onClick={ctx.toggleDropdownHandler}
               >
